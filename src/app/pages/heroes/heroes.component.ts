@@ -41,4 +41,16 @@ export class HeroesComponent implements OnInit {
 			}
 		});
 	}
+
+	getExpiration() {
+
+		let today = new Date();
+		today.setFullYear(today.getFullYear() + 2);
+		console.log(today);
+		console.log(today.getTime());
+		console.log(today.toLocaleString('en-US'));
+		console.log(today.toLocaleString('es-MX'));
+
+		return today;
+	}
 }
